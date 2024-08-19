@@ -1,0 +1,166 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.header {
+   width: 100%
+}
+
+.top-header {
+   max-width: 100%;
+   display: flex;
+   padding: 10px 10px;
+   background-color: #e2e2e294;
+}
+
+.icon {
+   font-size: 19px;
+   color: #8e8e8e;
+   margin-left: 20px;
+}
+
+.info p {
+   color: #333333;
+   margin-left: 10px;
+}
+
+/* MID-HEADER */
+
+.mid-header {
+   display: flex;
+   justify-content: space-between;
+   max-width: 100%;
+   padding: 20px 40px;
+}
+
+.logo img {
+   cursor: pointer;
+   object-fit: cover;
+}
+
+.search-box input {
+   width: 250px;
+   padding: 10px 10px;
+   outline: none;
+   background: #d2d2d266;;
+   border: none;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+
+.search-box button {
+   cursor: pointer;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   padding: 10px 10px;
+   width: 50px;
+   outline: none;
+   border: none;
+   border: 1px solid rgb(0, 97, 188);
+   color: white;
+   background: rgb(0, 97, 188);
+   margin-right: 30px;
+   transition: 0.5s;
+   font-weight: 600;
+}
+
+.search-box button:hover {
+   border: 1px solid #00286e;
+   background: #00286e;
+   color: rgb(198, 198, 198);
+}
+
+.user {
+   display: flex;
+   margin-right: 30px;
+}
+
+.icon {
+   margin-right: 10px;
+}
+
+.btn button {
+   border: none;
+   outline: none;
+   background: none;
+   cursor: 33;
+   font-size: 16px;
+}
+
+/* LAST-HEADER */
+.last-header {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 10px 10px;
+   background: #232323da;
+}
+
+.user-profile {
+   display: flex;
+   margin-top: 10px;
+}
+
+.user-profile .icon {
+   padding: 10px 10px;
+   background: white;
+   border-radius: 10px;
+}
+
+.info {
+   margin-left: 10px;
+}
+
+.info h2 {
+   color: white;
+   font-size: 18px;
+}
+
+.info p {
+   color: #ababab;
+   font-size: 14px;
+}
+
+.nav {
+   margin-top: 10px;
+}
+
+.nav ul {
+   display: flex;
+}
+
+.nav ul li {
+   list-style: none;
+}
+
+.nav ul li .link {
+   margin-right: 20px;
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
+   transition: 0.5s;
+}
+
+.nav ul li .link:hover {
+   color: rgb(255, 233, 67);
+}
+
+.last-header .offer {
+   margin-right: 20px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   background:rgb(255, 233, 67);
+   color: #232323b4;
+}
+
+.last-header .offer p {
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: #252525;
+   margin-top: 5px;
+}
+
