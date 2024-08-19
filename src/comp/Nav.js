@@ -91,11 +91,31 @@ const Nav = () => {
           </div>
           <div className="nav">
             <ul>
-               <li><Link className="link" to='/'>Home</Link></li>
-               <li><Link className="link" to='/shop'>Shop</Link></li>
-               <li><Link className="link" to='/collection'>Collection</Link></li>
-               <li><Link className="link" to='/about'>About</Link></li>
-               <li><Link className="link" to='/contact'>Contact</Link></li>
+              <li>
+                <Link className="link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/shop">
+                  Shop
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/collection">
+                  Collection
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/contact">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="offer">
