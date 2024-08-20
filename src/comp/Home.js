@@ -13,6 +13,11 @@ const Home = () => {
     });
     setTrendingProducts(filterProduct);
   };
+
+  const allTrendingProducts = () => {
+   setTrendingProducts(HomeProducts)
+  }
+
   return (
     <>
       <div className="home">
@@ -32,7 +37,7 @@ const Home = () => {
             <div className="left-box">
               <div className="header-left-box">
                 <div className="heading-left-box">
-                  <h2>trending product</h2>
+                  <h2 onClick={() => allTrendingProducts()}>trending products</h2>
                 </div>
 
                 <div className="cate">
@@ -71,7 +76,25 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="right-box"></div>
+            <div className="right-box">
+               <div className="right-box-container">
+                  <div className="testimonial">
+                     <div className="head">
+                        <h3>our testimonial</h3>
+                     </div>
+                     <div className="detail">
+                        <div className="detail-img-box">
+                           <img alt="testimonial" src="images/testimonial.jpg" width={100}  height={100}/>
+                        </div>
+                        <div className="info-testimonial">
+                           <h3>Sam Robot</h3>
+                           <h4>web designer</h4>
+                           <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
           </div>
         </div>
       </div>

@@ -47,6 +47,30 @@ const HomeProducts = [
       cat: '',
       type: 'featured'
    },
+   {
+      id: 6,
+      name: 'product6',
+      price: '105',
+      image: p3,
+      cat: '',
+      type: 'featured'
+   },
+   {
+      id: 7,
+      name: 'product7',
+      price: '199',
+      image: p4,
+      cat: '',
+      type: 'top'
+   },
+   {
+      id: 8,
+      name: 'product8',
+      price: '180',
+      image: p5,
+      cat: '',
+      type: 'top'
+   },
 ]
 
 export default HomeProducts

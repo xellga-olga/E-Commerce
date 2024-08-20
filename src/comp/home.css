@@ -92,6 +92,7 @@
    text-transform: uppercase;
    color: #232323;
    margin-top: 5px;
+   cursor: pointer;
 }
 
 .cate {
@@ -207,4 +208,73 @@
 .products-box-info .btn:hover {
    color: rgb(255, 255, 255);
    background: #232323;
+}
+
+.right-box {
+   width: 24%;
+   padding: 10px 20px;
+}
+
+.right-box-container {
+   max-width: 100%;
+}
+
+.testimonial{
+   width: 100%;
+   border: 4px solid #f6f7f8;
+}
+
+.head{
+   padding: 10px 10px;
+   width: 100%;
+   background: #f6f7f8;
+}
+
+.head h3 {
+   text-align: center;
+   font-size: 16px;
+   color: #232323;
+   text-transform: uppercase;
+   margin-top: 10px;
+   letter-spacing: 1px;
+}
+
+.detail{
+   padding: 10px 20px;
+}
+
+.detail-img-box {
+   margin-left: 50px;
+}
+
+.detail-img-box img {
+   border-radius: 50%;
+}
+
+.info-testimonial{
+   margin-top: 10px;
+}
+
+.info-testimonial h3 {
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 14px;
+   color: #232323;
+}
+
+.info-testimonial h4 {
+   text-align: center;
+   margin-top: 10px;
+   font-size: 12px;
+   font-weight: 300;
+   text-transform: uppercase;
+   color: #dd004d;
+}
+
+.info-testimonial p {
+   text-align: center;
+   color: #232323;
+   margin-top: 10px;
+   font-weight: 600;
+   font-size: 14px;
 }
