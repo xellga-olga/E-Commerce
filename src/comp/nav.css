@@ -28,12 +28,11 @@
 }
 
 /* MID-HEADER */
-
 .mid-header {
    display: flex;
    justify-content: space-between;
    max-width: 100%;
-   padding: 20px 40px;
+   padding: 10px 30px;
 }
 
 .logo img {
@@ -59,18 +58,21 @@
    width: 50px;
    outline: none;
    border: none;
-   border: 1px solid rgb(0, 97, 188);
-   color: white;
-   background: rgb(0, 97, 188);
+   border: 1px solid#232323;
+   color: rgb(255, 255, 255);
+   background: #232323;
    margin-right: 30px;
    transition: 0.5s;
    font-weight: 600;
 }
 
 .search-box button:hover {
-   border: 1px solid #00286e;
-   background: #00286e;
+   border: 1px solid rgb(255, 233, 67);
+
    color: rgb(198, 198, 198);
+
+   color: #232323;
+   background: rgb(255, 233, 67);
 }
 
 .user {

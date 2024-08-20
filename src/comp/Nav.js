@@ -25,7 +25,7 @@ const Nav = () => {
         </div>
         <div className="mid-header">
           <div className="logo">
-            <img src="images/logo.png" width={100} height={60} alt="logo" />
+            <img src="images/logo.png" width={200} height={50}alt="logo" />
           </div>
           <div className="search-box">
             <input type="text" placeholder="search" />
