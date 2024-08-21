@@ -210,7 +210,29 @@
    background: #232323;
 }
 
+.btn-products-box {
+   background: none;
+   margin-top: 20px;
+   margin-left: 45%;
+   padding: 10px 30px;
+   outline: none;
+   border: none;
+   background: #dd004d;
+   font-weight: 600;
+   color: white;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.btn-products-box:hover {
+   color: #dd004d;
+   background: #fff;
+  
+}
+
 .right-box {
+   display: flex;
+   flex-direction: column;
    width: 24%;
    padding: 10px 20px;
 }
@@ -236,6 +258,7 @@
    color: #232323;
    text-transform: uppercase;
    margin-top: 10px;
+   margin-bottom: 10px;
    letter-spacing: 1px;
 }
 
@@ -275,6 +298,87 @@
    text-align: center;
    color: #232323;
    margin-top: 10px;
+   margin-bottom: 20px;
    font-weight: 600;
    font-size: 14px;
+}
+
+
+.newsletter {
+   width: 100%;
+   background: #f6f7f8;
+   margin-top: 20px;
+   padding: 10px 10px;
+}
+.head-newsletter {
+   margin-top: 10px;
+   width: 100%;
+}
+
+.head-newsletter H3 {
+   color: #232323;
+   text-align: center;
+   font-size: 16px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.form-newsletter {
+   width: 100%;
+   margin-top: 10px;
+}
+
+.form-newsletter p {
+   color: #525252;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.form-newsletter input {
+   border: none;
+   margin-top: 10px;
+   padding: 10px 10px;
+   width: 100%;
+   outline: none;
+   border: 1px solid #f6f7f8;
+   color: #232323;
+}
+
+.form-newsletter button {
+   border: none;
+   outline: none;
+   margin-top: 10px;
+   margin-left: 60px;
+   padding: 10px 30px;
+   color: #232323;
+   background: rgb(255, 233, 67);
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.form-newsletter button:hover {
+   color: rgb(255, 255, 255);
+   background: #232323;
+}
+
+.icon-box-form-newsletter {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 20px;
+}
+
+.icon-form-newsletter {
+   margin-bottom: 30px;
+   border: 1px solid #dd004d;
+   color: #dd004d;
+   padding: 10px 10px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.icon-form-newsletter:hover{
+   color: #ffffff;
+   background: #dd004d;
 }

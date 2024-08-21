@@ -3,6 +3,7 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import HomeProducts from "./HomeProducts";
 import { GoEye, GoHeartFill } from "react-icons/go";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Home = () => {
   const [trendingProduct, setTrendingProducts] = useState(HomeProducts);
@@ -73,6 +74,7 @@ const Home = () => {
                     );
                   })}
                 </div>
+                <button className="btn-products-box">Show More</button>
               </div>
             </div>
 
@@ -93,10 +95,37 @@ const Home = () => {
                         </div>
                      </div>
                   </div>
+
+                  <div className="newsletter">
+                    <div className="head-newsletter">
+                      <h3>newsletter</h3>
+                    </div>
+                    <div className="form-newsletter">
+                      <p>join our malling list</p>
+                      <input type="email" placeholder="E-mail" autoComplete="off"></input>
+                      <button>subscribe</button>
+                      <div className="icon-box-form-newsletter">
+                        <div className="icon-form-newsletter">
+                        <FaFacebook />
+                        </div>
+                        <div className="icon-form-newsletter">
+                        <FaInstagram />
+                        </div>
+                        <div className="icon-form-newsletter">
+                        <FaTwitter />
+                        </div>
+                        <div className="icon-form-newsletter">
+                        <FaYoutube />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                </div>
             </div>
           </div>
         </div>
+
+        <div className="banners"></div>
       </div>
     </>
   );
