@@ -125,7 +125,29 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="banners"></div>
+        <div className="banners">
+          <div className="banners-container">
+            <div className="banners-container-left-box">
+              <div className="banner-box">
+                <img alt="banner" src="/images/banner-1.jpg" width={250} height={500}/>
+              </div>
+              <div className="banner-box">
+              <img alt="banner" src="/images/banner-2.jpg"  width={250} height={500}/>
+              </div>
+            </div>
+            <div className="banners-container-right-box">
+              <div className="banners-container-left-box-top">
+                <img alt="banner" src="/images/banner-3.jpg" width={600} height={300}/>
+                <img alt="banner" src="/images/banner-4.jpg" width={400} height={300}/>
+              </div>
+              <div className="banners-container-left-box-bottom">
+                <img alt="banner" src="/images/banner-5.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="product-type"></div>
       </div>
     </>
   );

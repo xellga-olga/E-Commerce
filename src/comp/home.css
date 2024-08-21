@@ -382,3 +382,45 @@
    color: #ffffff;
    background: #dd004d;
 }
+
+
+/* BANNER SECTION */
+
+.banners {
+   max-width: 100%;
+   padding: 20px 30px;
+}
+
+.banners-container {
+   display: flex;
+   max-width: 100%;
+}
+
+.banners-container-left-box {
+   width: 24%;
+}
+
+.banner-box{
+   margin-top: 10px;
+}
+
+.banners-container-right-box {
+   width: 75%;
+}
+
+.banners-container-left-box-top {
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.banners-container-left-box-bottom {
+   margin-top: 10px;
+   max-width: 100%;
+}
+
+.banners-container-left-box-bottom img {
+   width: 100%;
+   object-fit: cover;
+}
