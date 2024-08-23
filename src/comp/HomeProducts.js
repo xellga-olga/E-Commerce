@@ -12,7 +12,7 @@ const HomeProducts = [
       name: 'product1',
       price: '129',
       image: p1,
-      cat: '',
+      cat: 'Apple Watch Series 9',
       type: 'top'
    },
    {
@@ -20,7 +20,7 @@ const HomeProducts = [
       name: 'product2',
       price: '95',
       image: p2,
-      cat: '',
+      cat: 'Apple Watch Ultra 2',
       type: 'new'
    },
    {
@@ -28,7 +28,7 @@ const HomeProducts = [
       name: 'product3',
       price: '115',
       image: p3,
-      cat: '',
+      cat: 'Apple Watch SE',
       type: 'featured'
    },
    {
@@ -36,7 +36,7 @@ const HomeProducts = [
       name: 'product4',
       price: '199',
       image: p4,
-      cat: '',
+      cat: 'Apple Watch Nike',
       type: 'new'
    },
    {
@@ -44,7 +44,7 @@ const HomeProducts = [
       name: 'product5',
       price: '180',
       image: p5,
-      cat: '',
+      cat: 'Apple Watch Nike',
       type: 'featured'
    },
    {
@@ -52,7 +52,7 @@ const HomeProducts = [
       name: 'product6',
       price: '105',
       image: p3,
-      cat: '',
+      cat: 'Apple Watch Series 9',
       type: 'featured'
    },
    {
@@ -60,7 +60,7 @@ const HomeProducts = [
       name: 'product7',
       price: '199',
       image: p4,
-      cat: '',
+      cat: 'Apple Watch Series 9',
       type: 'top'
    },
    {
@@ -68,7 +68,7 @@ const HomeProducts = [
       name: 'product8',
       price: '180',
       image: p5,
-      cat: '',
+      cat: 'Apple Watch Ultra 2',
       type: 'top'
    },
    {
@@ -76,7 +76,7 @@ const HomeProducts = [
       name: 'product9',
       price: '129',
       image: p4,
-      cat: '',
+      cat: 'Apple Watch Ultra 2',
       type: 'new'
    },
    {
@@ -84,7 +84,7 @@ const HomeProducts = [
       name: 'product10',
       price: '133',
       image: p5,
-      cat: '',
+      cat: 'Apple Watch SE',
       type: 'new'
    },
    {
@@ -92,7 +92,7 @@ const HomeProducts = [
       name: 'product11',
       price: '111',
       image: p5,
-      cat: '',
+      cat: 'Apple Watch SE',
       type: 'top'
    },
    {
@@ -100,7 +100,7 @@ const HomeProducts = [
       name: 'product12',
       price: '178',
       image: p3,
-      cat: '',
+      cat: 'Apple Watch Series 9',
       type: 'featured'
    },
 ]

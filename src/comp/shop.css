@@ -1,0 +1,147 @@
+
+.shop {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.shop h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.shop p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shop-container-left-box {
+  flex: 1;
+  max-width: 300px;
+}
+
+.shop-container-left-box-category {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-container-left-box-category-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-container-left-box-category-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shop-container-left-box-category-box li {
+  font-size: 1rem;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.shop-container-left-box-category-box li:hover {
+  color: #dd004d;
+}
+
+.shop-banner {
+  margin-top: 20px;
+}
+
+.shop-banner-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.shop-container-right-box {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-container-right-box-banner img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.shop-product-box h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shop-product-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shop-box {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.shop-box:hover {
+  transform: scale(1.05);
+}
+
+.shop-box-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+
+.shop-box-icon {
+  position: absolute;
+  top: 50%;
+  right: -50px; 
+  display: flex;
+  flex-direction: column;
+  transition: right 0.5s ease;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.shop-box:hover .shop-box-icon {
+  right: 10px; 
+  
+}
+
+.shop-box-icon svg {
+  margin-top: 10px;
+  z-index: 1;
+  color: rgb(91, 91, 91);
+  transition: 0.3s ease;
+}
+
+.shop-box-icon svg:hover {
+  color: #dd004d;
+}
