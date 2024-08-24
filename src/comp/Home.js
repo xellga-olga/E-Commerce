@@ -167,10 +167,10 @@ const Home = () => {
             <div className="banners-container-right-box">
               <div className="banners-container-left-box-top">
                 <img alt="banner" src="/images/banner-3.jpg" width={600} height={300} />
-                <img alt="banner" src="/images/banner-4.jpg" width={400} height={300} />
+                <img alt="banner" src="/images/banner-4.jpg" width={500} height={300} />
               </div>
               <div className="banners-container-left-box-bottom">
-                <img alt="banner" src="/images/banner-5.jpg" />
+                <img alt="banner" src="/images/banner-5.jpg" height={516}/>
               </div>
             </div>
           </div>

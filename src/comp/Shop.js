@@ -1,6 +1,7 @@
 import React from "react";
 import "./shop.css";
 import { GoEye, GoHeartFill } from "react-icons/go";
+import { FiFilter } from "react-icons/fi";
 
 const Shop = ({ shop }) => {
   return (
@@ -17,10 +18,10 @@ const Shop = ({ shop }) => {
 
               <div className="shop-container-left-box-category-box">
                 <ul>
-                  <li># Apple Watch Series 9</li>
-                  <li># Apple Watch Ultra 2</li>
-                  <li># Apple Watch SE</li>
-                  <li># Apple Watch Nike</li>
+                  <li onClick={() => FiFilter("Apple Watch Series 9")}># Apple Watch Series 9</li>
+                  <li onClick={() => FiFilter("Apple Watch Ultra 2")}># Apple Watch Ultra 2</li>
+                  <li onClick={() => FiFilter("Apple Watch SE")}># Apple Watch SE</li>
+                  <li onClick={() => FiFilter("Apple Watch Nike")}># Apple Watch Nike</li>
                 </ul>
               </div>
             </div>
@@ -68,6 +69,11 @@ const Shop = ({ shop }) => {
                           <div className="icon-box">
                             <GoEye />
                           </div>
+                        </div>
+                        <div className="shop-box-detail">
+                           <h3>{curElm.name}</h3>
+                           <p>${curElm.price}</p>
+                           <button>Add To Cart</button>
                         </div>
                       </div>
                     </>

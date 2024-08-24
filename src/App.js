@@ -8,11 +8,18 @@ import HomeProducts from "./comp/HomeProducts";
 const App = () => {
   // SHOP PAGE PRODUCT
   const [shop, setShop] = useState(HomeProducts);
+  // SHOP CATEGORY FILTER
+  const Filter = (x) => {
+    const catefilter = HomeProducts.filter((product) => {
+      return product.cat === x;
+    });
+    setShop(catefilter);
+  };
   return (
     <>
       <BrowserRouter>
         <Nav />
-        <Rout shop={shop}/>
+        <Rout shop={shop} Filter={Filter} />
         <Footer />
       </BrowserRouter>
     </>
