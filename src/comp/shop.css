@@ -75,11 +75,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.shop-container-right-box-banner img {
+/* .shop-container-right-box-banner img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 20px;
-}
+} */
 
 .shop-product-box h2 {
   font-size: 1.8rem;
@@ -155,7 +155,7 @@
 }
 
 .shop-box-detail p {
-  font-size:16px;
+  font-size: 16px;
   color: #dd004d;
   margin-bottom: 10px;
 }
@@ -173,6 +173,6 @@
 }
 
 .shop-box-detail button:hover {
-   color: rgb(255, 255, 255);
-   background: #232323;
+  color: rgb(255, 255, 255);
+  background: #232323;
 }

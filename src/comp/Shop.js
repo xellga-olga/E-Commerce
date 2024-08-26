@@ -1,9 +1,8 @@
 import React from "react";
 import "./shop.css";
 import { GoEye, GoHeartFill } from "react-icons/go";
-import { FiFilter } from "react-icons/fi";
 
-const Shop = ({ shop }) => {
+const Shop = ({ shop, Filter, allCateFilter }) => {
   return (
     <>
       <div className="shop">
@@ -18,10 +17,19 @@ const Shop = ({ shop }) => {
 
               <div className="shop-container-left-box-category-box">
                 <ul>
-                  <li onClick={() => FiFilter("Apple Watch Series 9")}># Apple Watch Series 9</li>
-                  <li onClick={() => FiFilter("Apple Watch Ultra 2")}># Apple Watch Ultra 2</li>
-                  <li onClick={() => FiFilter("Apple Watch SE")}># Apple Watch SE</li>
-                  <li onClick={() => FiFilter("Apple Watch Nike")}># Apple Watch Nike</li>
+                  <li onClick={() => allCateFilter()}># All</li>
+                  <li onClick={() => Filter("Apple Watch Series 9")}>
+                    # Apple Watch Series 9
+                  </li>
+                  <li onClick={() => Filter("Apple Watch Ultra 2")}>
+                    # Apple Watch Ultra 2
+                  </li>
+                  <li onClick={() => Filter("Apple Watch SE")}>
+                    # Apple Watch SE
+                  </li>
+                  <li onClick={() => Filter("Apple Watch Nike")}>
+                    # Apple Watch Nike
+                  </li>
                 </ul>
               </div>
             </div>
@@ -37,7 +45,7 @@ const Shop = ({ shop }) => {
           </div>
 
           <div className="shop-container-right-box">
-            <div className="shop-container-right-box-banner">
+            {/* <div className="shop-container-right-box-banner">
               <div className="right-banner-img">
                 <img
                   alt="banner"
@@ -46,7 +54,7 @@ const Shop = ({ shop }) => {
                   height={250}
                 />
               </div>
-            </div>
+            </div> */}
             <div className="shop-product-box">
               <h2>Shop Product</h2>
               <div className="shop-product-box-container">
@@ -71,9 +79,9 @@ const Shop = ({ shop }) => {
                           </div>
                         </div>
                         <div className="shop-box-detail">
-                           <h3>{curElm.name}</h3>
-                           <p>${curElm.price}</p>
-                           <button>Add To Cart</button>
+                          <h3>{curElm.name}</h3>
+                          <p>${curElm.price}</p>
+                          <button>Add To Cart</button>
                         </div>
                       </div>
                     </>
