@@ -7,7 +7,7 @@ import { BiLogOutCircle } from "react-icons/bi";
 import { CiUser } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({ search, setSearch, searchProduct }) => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const { user, isAuthenticated } = useAuth0();
@@ -25,11 +25,16 @@ const Nav = () => {
         </div>
         <div className="mid-header">
           <div className="logo">
-            <img src="images/logo.png" width={200} height={50}alt="logo" />
+            <img src="images/logo.png" width={200} height={50} alt="logo" />
           </div>
           <div className="search-box">
-            <input type="text" placeholder="search" />
-            <button>
+            <input
+              type="text"
+              placeholder="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <button onClick={searchProduct}>
               <FaSearch />
             </button>
           </div>
@@ -102,8 +107,8 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
-                <Link className="link" to="/collection">
-                  Collection
+                <Link className="link" to="/cart">
+                  Cart
                 </Link>
               </li>
               <li>

@@ -2,7 +2,7 @@ import React from "react";
 import "./shop.css";
 import { GoEye, GoHeartFill } from "react-icons/go";
 
-const Shop = ({ shop, Filter, allCateFilter }) => {
+const Shop = ({ shop, Filter, allCateFilter, addToCart }) => {
   return (
     <>
       <div className="shop">
@@ -81,7 +81,7 @@ const Shop = ({ shop, Filter, allCateFilter }) => {
                         <div className="shop-box-detail">
                           <h3>{curElm.name}</h3>
                           <p>${curElm.price}</p>
-                          <button>Add To Cart</button>
+                          <button onClick={() => addToCart(curElm)}>Add To Cart</button>
                         </div>
                       </div>
                     </>
