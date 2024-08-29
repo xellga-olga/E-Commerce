@@ -45,48 +45,36 @@ const Shop = ({ shop, Filter, allCateFilter, addToCart }) => {
           </div>
 
           <div className="shop-container-right-box">
-            {/* <div className="shop-container-right-box-banner">
-              <div className="right-banner-img">
-                <img
-                  alt="banner"
-                  src="images/shop-banner.jpg"
-                  width={870}
-                  height={250}
-                />
-              </div>
-            </div> */}
             <div className="shop-product-box">
               <h2>Shop Product</h2>
               <div className="shop-product-box-container">
-                {shop.map((curElm) => {
-                  return (
-                    <>
-                      <div className="shop-box">
-                        <div className="shop-box-img">
-                          <img
-                            src={curElm.image}
-                            alt="product image"
-                            height={170}
-                            width={170}
-                          />
-                        </div>
-                        <div className="shop-box-icon">
-                          <div className="icon-box">
-                            <GoHeartFill />
-                          </div>
-                          <div className="icon-box">
-                            <GoEye />
-                          </div>
-                        </div>
-                        <div className="shop-box-detail">
-                          <h3>{curElm.name}</h3>
-                          <p>${curElm.price}</p>
-                          <button onClick={() => addToCart(curElm)}>Add To Cart</button>
-                        </div>
+                {shop.map((curElm) => (
+                  <div className="shop-box" key={curElm.id}>
+                    <div className="shop-box-img">
+                      <img
+                        src={curElm.image}
+                        alt="product image"
+                        height={170}
+                        width={170}
+                      />
+                    </div>
+                    <div className="shop-box-icon">
+                      <div className="icon-box">
+                        <GoHeartFill />
                       </div>
-                    </>
-                  );
-                })}
+                      <div className="icon-box">
+                        <GoEye />
+                      </div>
+                    </div>
+                    <div className="shop-box-detail">
+                      <h3>{curElm.name}</h3>
+                      <p>${curElm.price}</p>
+                      <button onClick={() => addToCart(curElm)}>
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
