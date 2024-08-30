@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./shop.css";
 import { GoEye, GoHeartFill } from "react-icons/go";
+import { TfiClose } from "react-icons/tfi";
 
 const Shop = ({ shop, Filter, allCateFilter, addToCart }) => {
+  const [showDetail, setShowDetail] = useState(false);
+  const [detail, setDetail] = useState(null);
+
+  const detailpage = (product) => {
+    setDetail(product);
+    setShowDetail(true);
+  };
+
+  const closedetail = () => {
+    setShowDetail(false);
+    setDetail(null);
+  };
+
   return (
     <>
+      {showDetail ? (
+        <>
+          <div className="product-detail">
+            <button className="close-btn-detail" onClick={closedetail}>
+              <TfiClose />
+            </button>
+            <div className="product-detail-container">
+              <div className="image-box-detail">
+                <img alt="product image" src={detail.image} />
+              </div>
+              <div className="product-detail-info">
+                <h3>{detail.name}</h3>
+                <p># {detail.cat}</p>
+                <p>{detail.description}</p>
+                <p>Price: ${detail.price}</p>
+                <button onClick={() => addToCart(detail)}>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </>
+      ) : null}
       <div className="shop">
         <h2># shop</h2>
         <p>Home . shop</p>
@@ -62,7 +97,10 @@ const Shop = ({ shop, Filter, allCateFilter, addToCart }) => {
                       <div className="icon-box">
                         <GoHeartFill />
                       </div>
-                      <div className="icon-box">
+                      <div
+                        onClick={() => detailpage(curElm)}
+                        className="icon-box"
+                      >
                         <GoEye />
                       </div>
                     </div>

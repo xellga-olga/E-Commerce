@@ -133,7 +133,6 @@
 }
 
 .shop-box-icon svg {
-  margin-top: 10px;
   z-index: 1;
   color: rgb(91, 91, 91);
   transition: 0.3s ease;
@@ -175,4 +174,111 @@
 .shop-box-detail button:hover {
   color: rgb(255, 255, 255);
   background: #232323;
+}
+
+.product-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 80%;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.image-box-detail {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box-detail img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail-info h3 {
+  font-size: 26px;
+  color: #dd004d;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.product-detail-info p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.product-detail-info p:first-of-type {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.product-detail-info p:last-of-type {
+  font-size: 20px;
+  color: #232323;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.product-detail-info button {
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #dd004d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.product-detail-info button:hover {
+  background-color: #c7003d;
+  transform: scale(1.05);
+}
+
+.close-btn-detail {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #dd004d;
+  transition: color 0.3s ease;
+}
+
+.close-btn-detail:hover {
+  color: #c7003d;
 }
