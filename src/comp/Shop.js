@@ -41,7 +41,7 @@ const Shop = ({ shop, Filter, allCateFilter, addToCart }) => {
         </>
       ) : null}
       <div className="shop">
-        <h2># shop</h2>
+        <h2>#shop</h2>
         <p>Home . shop</p>
         <div className="shop-container">
           <div className="shop-container-left-box">

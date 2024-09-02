@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Shop from "./Shop";
 import Cart from "./Cart";
+import Contact from "./Contact";
 
 const Rout = ({
   shop,
@@ -21,13 +22,13 @@ const Rout = ({
         <Route
           path="/cart"
           element={
-            <Cart 
-              cart={cart} 
-              onAdd={onAdd} 
-              onRemove={onRemove} 
-              onDelete={onDelete} 
+            <Cart
+              cart={cart}
+              onAdd={onAdd}
+              onRemove={onRemove}
+              onDelete={onDelete}
             />
-          } 
+          }
         />
         <Route
           path="/shop"
@@ -44,6 +45,7 @@ const Rout = ({
             />
           }
         />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
